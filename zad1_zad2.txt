@@ -1,0 +1,17 @@
+zad1 class
+1+2  int
+1+4.5 float
+3/2 float
+4/2 float
+3//2 int
+-3//2 int
+11%2  int
+2**10 int
+8 **(1/3) float
+
+ZAD 2
+int(3.0) konwertuje float na typ int
+float(3) konwertuje int na typ float
+float("3") konwertuje stringa na float
+str(12.4) konwertuje floata na stringa
+bool(0) konwertuje inta na bool zwracając nam wartosc false poniewaz 0  to jest false, a reszta liczb zawsze będzie prawdziwa jeżeli podamy je jako argument
