@@ -7,7 +7,7 @@ def PodajLiczby():
     return x,y
 
 
-def oblicz(dzialanie,x,y)
+def oblicz(dzialanie,x,y):
     if dzialanie == "1":
         return  x+y
     elif dzialanie == "2":
