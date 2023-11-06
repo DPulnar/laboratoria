@@ -8,14 +8,16 @@ def PodajLiczby():
 
 
 def oblicz(dzialanie,x,y)
-    if dzialanie == "dodawianie":
+    if dzialanie == "1":
         return  x+y
-    elif dzialanie == "odejmowanie":
+    elif dzialanie == "2":
         return x-y
-    elif dzialanie == "mnozenie":
+    elif dzialanie == "3":
         return x * y
-    elif dzialanie == "dzielenie":
+    elif dzialanie == "4":
         return  x/y
+    elif dzialanie == "6":
+        return  x**y
 def init():
     x,y = PodajLiczby()
     dzialanie = input("podaj działanie")
