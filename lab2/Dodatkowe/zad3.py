@@ -11,11 +11,12 @@ def init():
     czyautobus = input("czy jest autobus")
     czyautobus = Konwertujnabool(czyautobus)
 
+
     if czypada and czyautobus:
-        print("Weż parasol","Dostaniesz się na uczelnie")
+        print("Weż parasol \n","Dostaniesz się na uczelnie")
     elif czypada and not czyautobus:
         print("Nie dostaniesz się na uczelnie")
     elif not czypada and czyautobus:
-        print("Dostaniesz się na uczelnie","Miłego dnia i pięknej pogody")
+        print("Dostaniesz się na uczelnie \n","Miłego dnia i pięknej pogody")
 
 init()

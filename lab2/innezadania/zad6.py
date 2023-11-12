@@ -5,7 +5,7 @@ def init():
     suma = 0
     while i<=n:
         x = int(input(f"podaj liczbe punktow dla {i} studenta"))
-        if x<0 and x >100:
+        if x<0 or x >100:
             continue
         suma+=x
         i+=1
