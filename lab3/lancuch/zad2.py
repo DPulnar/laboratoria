@@ -13,5 +13,7 @@ print("OD DZIESIATEGO DO OSTATNIEGO")
 for i in range(10, -1, -1):
     print(tekst[i],i)
 print("OD KONCA DO POCZATKU")
-for i in range(len(tekst)-1, -1,-1):
-    print(tekst[i],i)
+# for i in range(len(tekst)-1, -1,-1):
+#     print(tekst[i],i)
+for i in tekst[::-1]:
+    print(i)
