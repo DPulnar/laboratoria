@@ -1,7 +1,5 @@
 import random
 import string
-
-
 def generuj(n, x):
 
     wygenerowana_lista = []
@@ -15,25 +13,31 @@ def generuj(n, x):
 
 n = int(input("ile elementow"))
 x = int(input("podaj dlugosc elementow"))
-krotka = tuple(generuj(n,x))
-
-print(krotka)
+lista = generuj(n,x)
+print(lista)
+#a
+suma = 0
+for v in lista:
+    suma+=len(v)
+print(suma)
+#b
+ilosc_k =0
+for v in lista:
+   ilosc_k+=v.count('k')
+print(ilosc_k,"ilosc liter k")
+#c
+ilosc_k =0
+for v in lista:
+   ilosc_k+=v.count('kt')
+print(ilosc_k,"ilosc kt")
+#d
 dlugosc = 0
-for v in krotka:
-   dlugosc+=len(v)
-print(dlugosc,"ilosc znakow")
-dlugosc = 0
-for v in krotka:
-   dlugosc+=v.count('k')
-print(dlugosc,"ilosc liter k")
-dlugosc = 0
-for v in krotka:
-   dlugosc+=v.count('kt')
-print(dlugosc,"ilosc  kt")
-
 s = int(input("podaj s"))
-for v in krotka:
+for v in lista:
     if len(v)> s:
         dlugosc += 1
-
-print(dlugosc,"ilosc ciagow dluzszych niz s")
+print("ile ciagow znakow dluzszych niz S:",dlugosc)
+#e
+for i,v in enumerate(lista):
+    lista[i]= "a"+lista[i]+"z"
+print(lista)
