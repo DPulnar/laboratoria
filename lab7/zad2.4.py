@@ -1,8 +1,16 @@
 import matplotlib.pyplot as plt
+import pandas as pd
 
-oceny = [3, 4, 5, 3, 4, 5, 5, 4, 3, 4]
-
-plt.hist(oceny, bins=[2, 3, 4, 5, 6], edgecolor='black')
-plt.xlabel('Oceny')
-plt.ylabel('Częstotliwosc')
+data = {
+    'nr_albumu':[69998,69997,69996,69995],
+    'imie': ["Janusz","Tomasz","Dominik","Wiktor"],
+    "nazwisko":["Nowak","Murjas","Pulnar","Bałon"],
+    "wiek": [21,37,20,20],
+    "ocena":[4,4,5,2]
+}
+df = pd.DataFrame(data)
+df['ocena'].hist(bins=5, edgecolor='black')
+plt.title('Rozkład ocen')
+plt.xlabel('Ocena')
+plt.ylabel('Ilość')
 plt.show()
